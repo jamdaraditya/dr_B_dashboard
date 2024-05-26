@@ -6,7 +6,7 @@ format:
       orientation: columns
 ---
 
-Welcome to the homepage of OMIS 482/681.
+Welcome to the Dr.B's Dashboard.
 
 
 ```{r setup, include=FALSE}
@@ -19,13 +19,13 @@ cleaned_data_bad_performers <- readRDS("cleaned_data_bad_performers.rds")
 
 ## Column {width="50%"}
 ```{r}
-knitr::kable(cleaned_data_good_performers, caption = "Top 5 Performing Students in OMIS-482: Class of 2024")
+knitr::kable(cleaned_data_good_performers, caption = "Top 5 Performing Students: Class of 2024")
 
 ```
 
 ## Column {width="50%"}
 ```{r}
-knitr::kable(cleaned_data_bad_performers, caption = "Bottom 5 Performing Students in OMIS-482: Class of 2024")
+knitr::kable(cleaned_data_bad_performers, caption = "Bottom 5 Performing Students: Class of 2024")
 
 ```
 
