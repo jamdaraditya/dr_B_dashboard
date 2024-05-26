@@ -1,10 +1,13 @@
 ---
-title: "Dr.B Dashboard"
-format: html
-editor: visual
+title: "Dr. B's Class Participation Leaderboard"
+format: 
+    dashboard: 
+      logo: "images/niu_cob_logo.png"
+      orientation: columns
 ---
 
 Welcome to the homepage of OMIS 482/681.
+
 
 ```{r setup, include=FALSE}
 # Load necessary libraries
@@ -15,15 +18,13 @@ cleaned_data_bad_performers <- readRDS("cleaned_data_bad_performers.rds")
 ```
 
 ## Column {width="50%"}
-
-```{r,echo=FALSE}
+```{r}
 knitr::kable(cleaned_data_good_performers, caption = "Top 5 Performing Students in OMIS-482: Class of 2024")
 
 ```
 
 ## Column {width="50%"}
-
-```{r, echo=FALSE}
+```{r}
 knitr::kable(cleaned_data_bad_performers, caption = "Bottom 5 Performing Students in OMIS-482: Class of 2024")
 
 ```

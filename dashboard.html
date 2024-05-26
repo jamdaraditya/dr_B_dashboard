@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Dr.B Dashboard</title>
+<title>Dr.&nbsp;B’s Class Participation Leaderboard</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,40 +33,48 @@ ul.task-list li input[type="checkbox"] {
 <script src="dashboard_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="dashboard_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="dashboard_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="dashboard_files/libs/quarto-dashboard/quarto-dashboard.js"></script>
+<script src="dashboard_files/libs/quarto-dashboard/stickythead.js"></script>
+<script src="dashboard_files/libs/quarto-dashboard/datatables.min.js" kdttablesentinel="true"></script>
+<script src="dashboard_files/libs/quarto-dashboard/pdfmake.min.js" kdttablesentinel="true"></script>
+<script src="dashboard_files/libs/quarto-dashboard/vfs_fonts.js" kdttablesentinel="true"></script>
+<script src="dashboard_files/libs/quarto-dashboard/web-components.js" type="module"></script>
+<script src="dashboard_files/libs/quarto-dashboard/components.js"></script>
+<link href="dashboard_files/libs/quarto-dashboard/datatables.min.css" rel="stylesheet" kdttablesentinel="true">
 
 
 </head>
 
-<body class="fullcontent">
+<body class="quarto-dashboard dashboard-fill fullcontent">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<header id="quarto-dashboard-header">
+<nav class="navbar navbar-expand-md slim" data-bs-theme="dark">
+  <div class="navbar-container container-fluid">
+    <button class="navbar-toggler hidden" type="button" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-controls="dashboard-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>    
 
-<main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Dr.B Dashboard</h1>
+    <div class="navbar-brand-container">       
+    <a href="#"><img src="images/niu_cob_logo.png" alt="" class="navbar-logo d-inline-block"></a>
+      <div class="navbar-title">
+        <div class="navbar-title-text"><a href="#">Dr.&nbsp;B’s Class Participation Leaderboard</a></div>
+        
+        
+      </div>
+    </div>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
+</nav>
 </header>
-
+<div class="page-layout-custom quarto-dashboard-content bslib-gap-spacing html-fill-container bslib-page-fill">  
 
 <p>Welcome to the homepage of OMIS 482/681.</p>
-<section id="column" class="level2" width="50%">
-<h2 width="50%" class="anchored" data-anchor-id="column">Column</h2>
-<div class="cell">
-<div class="cell-output-display">
+<div class="bslib-grid-item html-fill-item bslib-grid" data-layout="fill" style="display: grid; grid-template-columns: minmax(3em, 50fr) minmax(3em, 50fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
 <table class="table table-sm table-striped small">
 <caption>Top 5 Performing Students in OMIS-482: Class of 2024</caption>
 <thead>
@@ -94,11 +102,16 @@ ul.task-list li input[type="checkbox"] {
 </table>
 </div>
 </div>
-</section>
-<section id="column-1" class="level2" width="50%">
-<h2 width="50%" class="anchored" data-anchor-id="column-1">Column</h2>
-<div class="cell">
-<div class="cell-output-display">
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div><div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
 <table class="table table-sm table-striped small">
 <caption>Bottom 5 Performing Students in OMIS-482: Class of 2024</caption>
 <thead>
@@ -126,15 +139,24 @@ ul.task-list li input[type="checkbox"] {
 </table>
 </div>
 </div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 <script>
 if (localStorage.getItem("authenticated") !== "true") {
     window.location.href = "index.html";
 }
 </script>
-</section>
+<div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="hidden">
 
-</main>
-<!-- /main column -->
+</div>
+</div>
+</div>
+
+
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -544,8 +566,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-</div> <!-- /content -->
+</div> <!-- /container fluid -->
 
+<script type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (_event) {
+  if (window.bslib.Card) {
+    window.bslib.Card.initializeAllCards();
+  }
+}); 
+</script>
+  
 
 
 

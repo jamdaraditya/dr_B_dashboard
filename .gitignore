@@ -1,2 +1,4 @@
 /.quarto/
 .Rproj.user
+credentials.json
+files/
