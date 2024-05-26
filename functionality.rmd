@@ -1,0 +1,56 @@
+---
+title: "Functionality"
+author: "Venkata Nekkanti"
+date: "2024-05-24"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+```{r}
+library(tidyverse)
+library(readxl)
+library(dplyr)
+```
+
+```{r}
+# Read the Excel file
+data <- read_excel("files/students_participation_tracker_BP.xlsx")
+```
+
+```{r}
+# Clean and process the data
+cleaned_data_good_performers <- data  |> 
+  filter(!is.na(teams_score))  |> 
+  arrange(desc(teams_score))  |> select(1) |> 
+  head(5)
+```
+
+```{r}
+# Save the processed data to an RDS file for use in the Quarto document
+saveRDS(cleaned_data_good_performers, "cleaned_data_good_performers.rds")
+```
+
+```{r}
+# Clean and process the data
+cleaned_data_bad_performers <- data  |> 
+  filter(!is.na(teams_score))  |> 
+  arrange(teams_score)  |> select(1) |> 
+  head(5)
+```
+
+```{r}
+# Save the processed data to an RDS file for use in the Quarto document
+saveRDS(cleaned_data_bad_performers, "cleaned_data_bad_performers.rds")
+```
+
+
+
+
