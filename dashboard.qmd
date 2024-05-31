@@ -1,6 +1,6 @@
 ---
 title: "Dr. B's Leaderboard"
-author: "Author: Venkata Surya Vineel Nekkanti"
+author: "Author: Vineel Nekkanti"
 format: 
   dashboard: 
     logo: "images/niu_cob_logo.png"
@@ -15,7 +15,6 @@ library(knitr)
 library(tidyverse)
 library(readxl)
 library(dplyr)
-library(kableExtra)
 
 
 # Data pre-processing
@@ -86,31 +85,32 @@ professionalsim_data <- data |>
   mutate(Rank = row_number(), Points = round(`Professionalism`, 2)) |> 
   select(Rank, Name=1,Points) |> 
   filter(!is.na(Name))
+
 ```
 
 ## Row {.tabset}
 
-#### Overall Student Performance
+#### Overall Score
 ```{r}
 kable(overall_student_data)
 ```
-#### Weekly Activity Performance
+#### Weekly Activities
 ```{r}
 kable(weekly_activity_data)
 ```
-#### Survey/Poll/Technology Test Performance
+#### Survey/Poll/Technology Test
 ```{r}
 kable(survey_poll_techtest_data)
 ```
-#### In-Class Performance
+#### In-Class
 ```{r}
 kable(in_class_participation_data)
 ```
-#### Teams' Participation Performance 
+#### Teams Participation 
 ```{r}
 kable(teams_participation_data)
 ```
-#### Professional Performance
+#### Professionalism
 ```{r}
 kable(professionalsim_data)
 ```
