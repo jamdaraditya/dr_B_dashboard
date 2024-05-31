@@ -1,0 +1,45 @@
+---
+title: "Dr. B's Class Participation Leaderboard"
+format: 
+    dashboard: 
+      logo: "images/niu_cob_logo.png"
+      orientation: columns
+---
+
+Welcome to the Dr.B's Class' Participation Leader board.
+
+
+```{r setup, include=FALSE}
+# Load necessary libraries
+library(readr)
+library(knitr)
+cleaned_data_good_performers <- readRDS("cleaned_data_good_performers.rds")
+cleaned_data_bad_performers <- readRDS("cleaned_data_bad_performers.rds")
+
+
+
+```
+
+## Column {width="50%"}
+```{r}
+knitr::kable(cleaned_data_good_performers, caption = "Top 5 Performing Students: Class of 2024")
+
+```
+
+## Column {width="50%"}
+```{r}
+knitr::kable(cleaned_data_bad_performers, caption = "Bottom 5 Performing Students: Class of 2024")
+
+```
+
+```{r, echo=FALSE, results='asis'}
+# Inject JavaScript to check authentication status and redirect if necessary
+cat(htmltools::HTML('<script>
+if (localStorage.getItem("authenticated") !== "true") {
+    window.location.href = "index.html";
+}
+</script>'))
+
+```
+
+

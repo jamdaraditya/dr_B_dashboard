@@ -1,5 +1,8 @@
 project:
-  title: "project2"
-
-
-
+  title: "Dr. B's Class Participation Leaderboard"
+format:
+  html:
+    css: styles.css  # Link to a custom CSS file if needed
+    theme: default
+    toc: true  # Enable the table of contents if needed
+    toc-location: left
