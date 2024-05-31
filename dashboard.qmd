@@ -98,10 +98,6 @@ kable(overall_student_data)
 ```{r}
 kable(weekly_activity_data)
 ```
-#### Survey/Poll/Technology Test
-```{r}
-kable(survey_poll_techtest_data)
-```
 #### In-Class
 ```{r}
 kable(in_class_participation_data)
@@ -114,4 +110,17 @@ kable(teams_participation_data)
 ```{r}
 kable(professionalsim_data)
 ```
+#### Others
+```{r}
+kable(survey_poll_techtest_data)
+```
 
+```{r, echo=FALSE, results='asis'}
+# Inject JavaScript to check authentication status and redirect if necessary
+cat(htmltools::HTML('<script>
+if (localStorage.getItem("authenticated") !== "true") {
+    window.location.href = "index.html";
+}
+</script>'))
+
+```
