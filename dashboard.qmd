@@ -100,31 +100,31 @@ professionalsim_data <- data |>
 kable(overall_student_data)
 ```
 
-#### Week.
+#### W
 
 ```{r}
 kable(weekly_activity_data)
 ```
 
-#### In-c
+#### I
 
 ```{r}
 kable(in_class_participation_data)
 ```
 
-#### Teams
+#### T
 
 ```{r}
 kable(teams_participation_data)
 ```
 
-#### Prof.
+#### Pr
 
 ```{r}
 kable(professionalsim_data)
 ```
 
-#### Others
+#### O
 
 ```{r}
 kable(survey_poll_techtest_data)
