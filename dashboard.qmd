@@ -1,6 +1,5 @@
 ---
 title: "Dr. B's Leaderboard"
-include-after-body: "footer.html"
 author: "Author: Vineel Nekkanti"
 format: 
   dashboard: 
