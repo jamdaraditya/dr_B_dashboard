@@ -1,0 +1,9 @@
+---
+title: "Dr. B's Leaderboard"
+author: "Author: Vineel Nekkanti"
+format: dashboard
+---
+
+:::{.callout-note collapse="true"}
+Today there is no class
+:::

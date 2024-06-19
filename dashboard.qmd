@@ -1,12 +1,16 @@
 ---
 title: "Dr. B's Leaderboard"
+include-after-body: "footer.html"
 author: "Author: Vineel Nekkanti"
 format: 
   dashboard: 
     logo: "images/niu_cob_logo.png"
     orientation: rows
 ---
-Welcome to Dr. B's Class Participation Leader board.
+<div style="display: flex; justify-content: space-between;">
+  <div>Welcome to Dr. B's Class Participation Leader board.</div>
+  <div>Updated on: `r format(Sys.Date(), '%B %d, %Y')`</div>
+</div>
 
 ```{r setup, include=FALSE}
 # Load necessary libraries
@@ -90,27 +94,38 @@ professionalsim_data <- data |>
 
 ## Row {.tabset}
 
-#### Overall Score
+#### Overall P* Score
+
 ```{r}
 kable(overall_student_data)
 ```
-#### Weekly Activities
+
+#### Weekly Act.
+
 ```{r}
 kable(weekly_activity_data)
 ```
+
 #### In-Class
+
 ```{r}
 kable(in_class_participation_data)
 ```
-#### Teams Participation 
+
+#### Teams
+
 ```{r}
 kable(teams_participation_data)
 ```
+
 #### Professionalism
+
 ```{r}
 kable(professionalsim_data)
 ```
+
 #### Others
+
 ```{r}
 kable(survey_poll_techtest_data)
 ```

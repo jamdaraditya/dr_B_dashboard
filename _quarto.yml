@@ -6,3 +6,4 @@ format:
     theme: default
     toc: true  # Enable the table of contents if needed
     toc-location: left
+    include-after-body: footer.html  # Include the footer markdown file
