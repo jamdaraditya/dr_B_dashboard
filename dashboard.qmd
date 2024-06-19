@@ -94,19 +94,19 @@ professionalsim_data <- data |>
 
 ## Row {.tabset}
 
-#### Overall P* Score
+#### P
 
 ```{r}
 kable(overall_student_data)
 ```
 
-#### Weekly Act.
+#### Week.
 
 ```{r}
 kable(weekly_activity_data)
 ```
 
-#### In-Class
+#### In-c
 
 ```{r}
 kable(in_class_participation_data)
@@ -118,7 +118,7 @@ kable(in_class_participation_data)
 kable(teams_participation_data)
 ```
 
-#### Professionalism
+#### Prof.
 
 ```{r}
 kable(professionalsim_data)
