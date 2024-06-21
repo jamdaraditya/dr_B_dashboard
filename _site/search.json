@@ -1,0 +1,22 @@
+[
+  {
+    "objectID": "home.html",
+    "href": "home.html",
+    "title": "Home",
+    "section": "",
+    "text": "Home content starts here",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "home.html#place-holder-for-home",
+    "href": "home.html#place-holder-for-home",
+    "title": "Home",
+    "section": "",
+    "text": "Home content starts here",
+    "crumbs": [
+      "Home"
+    ]
+  }
+]
